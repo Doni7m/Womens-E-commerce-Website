@@ -1,15 +1,16 @@
 import React, { useState } from 'react';
-import { 
+import { Link } from 'react-router-dom';
+import {
   Search, ShoppingBag, Heart, User, Menu, X,
-  Dress, Shoe, Sparkles, Leaf, Smartphone, Home as HomeIcon
+  Shirt, Footprints, Sparkles, Leaf, Smartphone, Home as HomeIcon
 } from 'lucide-react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const categories = [
-    { name: 'Roupas & Acessórios', icon: Dress },
-    { name: 'Calçados', icon: Shoe },
+    { name: 'Roupas & Acessórios', icon: Shirt },
+    { name: 'Calçados', icon: Footprints },
     { name: 'Beleza & Skincare', icon: Sparkles },
     { name: 'Eletrônicos', icon: Smartphone },
     { name: 'Casa & Decoração', icon: HomeIcon },
@@ -55,9 +56,9 @@ const Navbar = () => {
             <button className="text-gray-600 hover:text-pink-600">
               <ShoppingBag className="h-6 w-6" />
             </button>
-            <button className="text-gray-600 hover:text-pink-600">
+            <Link to="/dashboard" className="text-gray-600 hover:text-pink-600">
               <User className="h-6 w-6" />
-            </button>
+            </Link>
           </div>
         </div>
       </div>

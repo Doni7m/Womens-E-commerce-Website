@@ -1,6 +1,6 @@
 import React from 'react';
-import { 
-  Instagram, Facebook, Pinterest, 
+import {
+  Instagram, Facebook, Twitter,
   CreditCard, Truck, ArrowLeftRight,
   Mail, Phone, MapPin
 } from 'lucide-react';
@@ -24,7 +24,7 @@ const Footer = () => {
                 <Facebook className="h-6 w-6" />
               </a>
               <a href="#" className="text-gray-400 hover:text-pink-500">
-                <Pinterest className="h-6 w-6" />
+                <Twitter className="h-6 w-6" />
               </a>
             </div>
           </div>
