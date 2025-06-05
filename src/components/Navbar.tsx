@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import { 
+import {
   Search, ShoppingBag, Heart, User, Menu, X,
   Dress, Shoe, Sparkles, Leaf, Smartphone, Home as HomeIcon
 } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,7 +29,7 @@ const Navbar = () => {
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
             <div className="flex-shrink-0 flex items-center">
-              <h1 className="text-2xl font-bold text-pink-600">Bella</h1>
+              <h1 className="text-2xl font-bold text-pink-600">Bella Shop</h1>
             </div>
           </div>
 
@@ -55,9 +56,12 @@ const Navbar = () => {
             <button className="text-gray-600 hover:text-pink-600">
               <ShoppingBag className="h-6 w-6" />
             </button>
-            <button className="text-gray-600 hover:text-pink-600">
+            <Link to="/login" className="text-gray-600 hover:text-pink-600">
               <User className="h-6 w-6" />
-            </button>
+            </Link>
+            <Link to="/admin" className="text-sm text-gray-600 hover:text-pink-600 hidden md:block">
+              Admin
+            </Link>
           </div>
         </div>
       </div>

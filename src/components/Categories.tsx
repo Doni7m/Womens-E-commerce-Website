@@ -1,7 +1,7 @@
 import React from 'react';
-import { 
-  Dress, Shoe, Sparkles, Smartphone, 
-  HomeIcon, Leaf, ShoppingBag 
+import {
+  Dress, Shoe, Sparkles, Smartphone,
+  HomeIcon, Leaf
 } from 'lucide-react';
 
 const categories = [
