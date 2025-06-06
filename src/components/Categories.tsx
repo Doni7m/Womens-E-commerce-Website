@@ -1,21 +1,21 @@
 import React from 'react';
 import { 
-  Dress, Shoe, Sparkles, Smartphone, 
+  Shirt, Bot, Sparkles, Smartphone, 
   HomeIcon, Leaf, ShoppingBag 
 } from 'lucide-react';
 
-const categories = [
+  const categories = [
   {
     name: 'Moda',
     description: 'Roupas e Acessórios',
-    icon: Dress,
+    icon: Shirt,
     color: 'bg-pink-100',
     textColor: 'text-pink-600',
   },
   {
     name: 'Calçados',
     description: 'Conforto e Estilo',
-    icon: Shoe,
+    icon: Bot,
     color: 'bg-purple-100',
     textColor: 'text-purple-600',
   },

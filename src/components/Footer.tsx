@@ -1,6 +1,6 @@
 import React from 'react';
 import { 
-  Instagram, Facebook, Pinterest, 
+  Instagram, Facebook, 
   CreditCard, Truck, ArrowLeftRight,
   Mail, Phone, MapPin
 } from 'lucide-react';
@@ -22,9 +22,6 @@ const Footer = () => {
               </a>
               <a href="#" className="text-gray-400 hover:text-pink-500">
                 <Facebook className="h-6 w-6" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-pink-500">
-                <Pinterest className="h-6 w-6" />
               </a>
             </div>
           </div>
